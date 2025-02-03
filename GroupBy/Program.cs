@@ -5,8 +5,8 @@ List<Student> students = Student.GetStudents();
 List<Pet> pets = Pet.GenerateMockData();
 List<PetOwner> petOwners = PetOwner.GenerateMockData();
 
-ShowDataAndRelationships(pets, petOwners, students);
-
+BasingObjects.ShowDataAndRelationships(pets, petOwners, students);
+Console.WriteLine("-------------------------");
 
 var personsInitialsToPetsMapping = petOwners.
                                  GroupBy(person => person.Name.First())
@@ -22,7 +22,7 @@ foreach (var pet in personsInitialsToPetsMapping)
 {
     Console.WriteLine(pet);
 }
-
+Console.WriteLine("-------------------------");
 
 IEnumerable<IGrouping<string, Student>> GroupByMS = Student.GetStudents().GroupBy(s => s.Barnch);
 
@@ -38,27 +38,3 @@ foreach (IGrouping<string, Student> group in GroupByMS)
 
 
 
-static void ShowDataAndRelationships(List<Pet> pets, List<PetOwner> petOwners, List<Student> students)
-{
-    Console.WriteLine("Students");
-    foreach (var student in students)
-    {
-        Console.WriteLine(student);
-    }
-    Console.WriteLine("-------------------------");
-
-    Console.WriteLine("Pets");
-    foreach (var pet in pets)
-    {
-        Console.WriteLine(pet);
-    }
-    Console.WriteLine("-------------------------");
-
-    
-    Console.WriteLine("Pets Owner");
-    foreach (var owner in petOwners)
-    {
-        Console.WriteLine(owner);
-    }
-    Console.WriteLine("-------------------------");
-}
