@@ -54,11 +54,16 @@ var heavyPetTypes=pets.
     Where(x=>x.Weight>4)
     .Select(x=>x.Type)
     .Distinct();
+
+var heavyPetsByName = pets.
+    Where(x => x.Weight > 4)
+    .Select(x => $"Pet named {x.Name}, of type {x.Type} ");
+
 var petsInitials = pets
     .OrderBy(pet => pet.Name)
     .Select(pet => $"{pet.Name.First()}.");
 var petsData = pets.Select(pet =>
-$"Pet named {pet.Name}, of type{pet.Type} " +
+$"Pet named {pet.Name}, of type {pet.Type} " +
 $"and weight {pet.Weight}");
 
 
@@ -74,6 +79,13 @@ Console.WriteLine("Heavy");
 foreach (var weight in heavyPetTypes)
 {
     Console.WriteLine(weight);
+}
+
+Console.WriteLine("Heavy by name");
+
+foreach (var pet in heavyPetsByName)
+{
+    Console.WriteLine(pet);
 }
 
 Console.WriteLine("petsInitials");
