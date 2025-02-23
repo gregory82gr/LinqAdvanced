@@ -67,6 +67,13 @@ foreach (var item in dict)
     Console.WriteLine("{0} = {1}", item.Key, item.Value);
 }
 
+Console.WriteLine("weights sum by Type with toLookup Approach 2");
+var dict1 = pets.ToLookup(p => p.Type).ToDictionary(grp => grp.Key, grp => grp.Sum(p => p.Weight));
+foreach (var item in dict1)
+{
+    Console.WriteLine("{0} = {1}", item.Key, item.Value);
+}
+
 Console.WriteLine("-------------------------");
 var personsInitialsToPetsMapping = petOwners.
                                  GroupBy(person => person.Name.First())
