@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryGetNonEnumeratedCount", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToHashset", "ToHashset\ToHashset.csproj", "{90A6EF2E-AD54-4E6B-A459-78FFA42EB575}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDictionary", "ToDictionary\ToDictionary.csproj", "{E6B6329F-AFD8-4D28-9286-625088E63BF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToLookup", "ToLookup\ToLookup.csproj", "{6FDB4D08-7B0E-4BC9-9926-5AD72B03266B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{90A6EF2E-AD54-4E6B-A459-78FFA42EB575}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90A6EF2E-AD54-4E6B-A459-78FFA42EB575}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90A6EF2E-AD54-4E6B-A459-78FFA42EB575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B6329F-AFD8-4D28-9286-625088E63BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B6329F-AFD8-4D28-9286-625088E63BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B6329F-AFD8-4D28-9286-625088E63BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B6329F-AFD8-4D28-9286-625088E63BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDB4D08-7B0E-4BC9-9926-5AD72B03266B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDB4D08-7B0E-4BC9-9926-5AD72B03266B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDB4D08-7B0E-4BC9-9926-5AD72B03266B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDB4D08-7B0E-4BC9-9926-5AD72B03266B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
