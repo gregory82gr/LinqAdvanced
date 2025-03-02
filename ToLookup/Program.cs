@@ -31,3 +31,15 @@ foreach (var group in groupedProducts)
         Console.WriteLine($"  {product.Name}");
     }
 }
+
+Console.WriteLine();
+var grouped = products.GroupBy(p => p.Category).ToDictionary(g => g.Key, g => g.ToList());
+
+foreach (var group in grouped)
+{
+    Console.WriteLine($"Category: {group.Key}");
+    foreach (var product in group.Value)
+    {
+        Console.WriteLine($"  {product.Name}");
+    }
+}
