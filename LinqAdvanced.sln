@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupJoin", "GroupJoin\Grou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chunk_Range", "Chunk_Range\Chunk_Range.csproj", "{63F7171A-C19E-45D6-834B-685D2A663741}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryGetNonEnumeratedCount", "TryGetNonEnumeratedCount\TryGetNonEnumeratedCount.csproj", "{A933BAD3-BD2C-443D-A6E2-86652AD6C39B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{63F7171A-C19E-45D6-834B-685D2A663741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63F7171A-C19E-45D6-834B-685D2A663741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63F7171A-C19E-45D6-834B-685D2A663741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A933BAD3-BD2C-443D-A6E2-86652AD6C39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A933BAD3-BD2C-443D-A6E2-86652AD6C39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A933BAD3-BD2C-443D-A6E2-86652AD6C39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A933BAD3-BD2C-443D-A6E2-86652AD6C39B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
