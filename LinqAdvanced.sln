@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Join-Query syntax", "Join-Q
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group By - Query syntax", "Group By - Query syntax\Group By - Query syntax.csproj", "{542DB59E-0DB2-45AE-A585-F67F679A5EF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aggregate", "Aggregate\Aggregate.csproj", "{585977C3-6346-49AC-A859-951E3DB0D25A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{542DB59E-0DB2-45AE-A585-F67F679A5EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{542DB59E-0DB2-45AE-A585-F67F679A5EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{542DB59E-0DB2-45AE-A585-F67F679A5EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585977C3-6346-49AC-A859-951E3DB0D25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585977C3-6346-49AC-A859-951E3DB0D25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585977C3-6346-49AC-A859-951E3DB0D25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585977C3-6346-49AC-A859-951E3DB0D25A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
