@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralLauncher", "CentralL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where", "Where\Where.csproj", "{22C16D19-1FCC-4CF2-AF10-0B23231E46D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where-Query syntax", "Where-Query syntax\Where-Query syntax.csproj", "{341F712D-4F36-431E-A1B6-CB437A5D48A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{22C16D19-1FCC-4CF2-AF10-0B23231E46D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C16D19-1FCC-4CF2-AF10-0B23231E46D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C16D19-1FCC-4CF2-AF10-0B23231E46D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

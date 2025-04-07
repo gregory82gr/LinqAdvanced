@@ -9,7 +9,7 @@ namespace Data
     public class PetOwner
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public List<Pet> Pets { get; set; }
 
         public PetOwner(int id, string name, List<Pet> pets)

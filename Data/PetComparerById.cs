@@ -10,7 +10,7 @@ namespace Data
     {
         bool IEqualityComparer<Pet>.Equals(Pet? x, Pet? y)
         {
-            return x.Id==y.Id;
+            return x?.Id==y?.Id;
         }
 
         int IEqualityComparer<Pet>.GetHashCode(Pet obj)

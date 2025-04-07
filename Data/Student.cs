@@ -9,9 +9,9 @@ namespace Data
     public class Student
     {
         public int ID { get; set; }
-        public string Name { get; set; }
-        public string Gender { get; set; }
-        public string Barnch { get; set; }
+        public string? Name { get; set; }
+        public string? Gender { get; set; }
+        public string? Barnch { get; set; }
         public int Age { get; set; }
         public static List<Student> GetStudents()
         {

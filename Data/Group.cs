@@ -8,7 +8,7 @@ namespace Data
 {
     public class Group
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime AppointmentDate { get; set; }
     }
 }
