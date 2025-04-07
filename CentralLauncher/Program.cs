@@ -77,6 +77,7 @@ namespace CentralLauncher
 
             // Find all .csproj files
             string[] projectFiles = Directory.GetFiles(solutionDirectory, "*.csproj", SearchOption.AllDirectories);
+            string solutionName = Path.GetFileNameWithoutExtension(Directory.GetFiles(solutionDirectory, "*.sln").FirstOrDefault() ?? "");
 
             int index = 1;
             foreach (string projectFile in projectFiles)
@@ -86,6 +87,10 @@ namespace CentralLauncher
 
                 // Skip the launcher project itself
                 if (projectName == "CentralLauncher")
+                    continue;
+
+                // Skip the solution project if it exists
+                if (projectName == solutionName)
                     continue;
 
                 // Check if it's a console app (.csproj content contains OutputType>Exe)
