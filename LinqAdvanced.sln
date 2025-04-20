@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where", "Where\Where.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where-Query syntax", "Where-Query syntax\Where-Query syntax.csproj", "{341F712D-4F36-431E-A1B6-CB437A5D48A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderBy", "OrderBy\OrderBy.csproj", "{295EEC55-927C-42F5-9990-BD08F3FDF200}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{341F712D-4F36-431E-A1B6-CB437A5D48A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295EEC55-927C-42F5-9990-BD08F3FDF200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295EEC55-927C-42F5-9990-BD08F3FDF200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295EEC55-927C-42F5-9990-BD08F3FDF200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295EEC55-927C-42F5-9990-BD08F3FDF200}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
