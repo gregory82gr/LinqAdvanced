@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SElect - Query syntax", "SE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMany - Query syntax", "SelectMany - Query syntax\SelectMany - Query syntax.csproj", "{5CCFCFE5-78A0-4E50-BB47-3BE8B198B737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Introduction", "_Introduction\_Introduction.csproj", "{ADB5D895-D37C-4577-91FF-2D35902FD9AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{5CCFCFE5-78A0-4E50-BB47-3BE8B198B737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CCFCFE5-78A0-4E50-BB47-3BE8B198B737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CCFCFE5-78A0-4E50-BB47-3BE8B198B737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
