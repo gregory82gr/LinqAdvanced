@@ -134,7 +134,7 @@ namespace CentralLauncher
             {
                 // Create a batch file to run the project and pause afterward
                 string batchFilePath = Path.Combine(Path.GetTempPath(), $"run_{projectName}.bat");
-
+                Console.ForegroundColor = ConsoleColor.Red;
                 // Write commands to the batch file
                 // The pause command will keep the window open until the user presses a key
                 File.WriteAllText(batchFilePath,
