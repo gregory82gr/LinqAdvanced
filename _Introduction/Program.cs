@@ -46,7 +46,7 @@ Console.WriteLine($"Is any number?  {isAnyNumberGenericExtensionWithoutCondition
 
 Console.WriteLine("-------------------------");
 Console.WriteLine("GENERIC -EXTENSION-ERRORS");
-numbers = null;
+
 try
 {
     var isAnyNumberLargerThan100GenericExtensionError = numbers?.IsAnyAsExtension(null);
@@ -56,10 +56,10 @@ catch (ArgumentNullException ex)
     Console.WriteLine($"Error: {ex.Message}");
 }
 
-
+numbers = null;
 try
 {
-    var isAnyNumberLargerThan100GenericExtensionError = numbers?.IsAnyAsExtension(null);
+    var isAnyNumberLargerThan100GenericExtensionError = numbers.IsAnyAsExtension(null);
 }
 catch (ArgumentNullException ex)
 {
