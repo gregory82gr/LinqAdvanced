@@ -38,21 +38,28 @@ Console.WriteLine($"Is any number odd? {isAnyNumberOddLINQ}");
 var isAnyWordLongerThan3LINQ = words.Any(x => x.Length > 3);
 Console.WriteLine($"Is any word longer than 3? {isAnyWordLongerThan3LINQ}");
 Console.WriteLine("-------------------------");
-Console.WriteLine("GENERIC -EXTENSION-ERRORS");
 
+Console.WriteLine("-------------------------");
+Console.WriteLine("GENERIC -EXTENSION-WithoutCondition");
+var isAnyNumberGenericExtensionWithoutCondition = numbers.IsAnyAsExtensionWithoutCondition();
+Console.WriteLine($"Is any number?  {isAnyNumberGenericExtensionWithoutCondition}");
+
+Console.WriteLine("-------------------------");
+Console.WriteLine("GENERIC -EXTENSION-ERRORS");
+numbers = null;
 try
 {
-    var isAnyNumberLargerThan100GenericExtensionError = numbers.IsAnyAsExtension(null);
+    var isAnyNumberLargerThan100GenericExtensionError = numbers?.IsAnyAsExtension(null);
 }
 catch (ArgumentNullException ex)
 {
     Console.WriteLine($"Error: {ex.Message}");
 }
 
-numbers = null;
+
 try
 {
-    var isAnyNumberLargerThan100GenericExtensionError = numbers.IsAnyAsExtension(null);
+    var isAnyNumberLargerThan100GenericExtensionError = numbers?.IsAnyAsExtension(null);
 }
 catch (ArgumentNullException ex)
 {

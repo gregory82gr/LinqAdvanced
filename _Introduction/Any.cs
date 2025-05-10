@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _Introduction
+﻿namespace _Introduction
 {
     public static  class Any
     {
@@ -51,5 +45,19 @@ namespace _Introduction
             }
             return false;
         }
+
+        public static bool IsAnyAsExtensionWithoutCondition<T>(this IEnumerable<T> collection)
+        {
+            if (collection == null)
+            {
+                throw new ArgumentNullException(nameof(collection));
+            }
+            if (collection.Count()!=0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
+
