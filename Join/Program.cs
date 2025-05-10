@@ -54,3 +54,36 @@ foreach (var appointment in petsAppoinmentsFullInfo)
 {
     Console.WriteLine(appointment);
 }
+Console.WriteLine("-------------------------");
+Console.WriteLine("Pets Appoinments Full info in more queries");
+var petAppointment= pets.Join(
+    appointments,
+    pet => pet.Id,
+    clinicAppointment => clinicAppointment.PetId,
+    (pet, clinicAppointment) => new
+    {
+        Pet = pet,
+        Appointment = clinicAppointment
+    });
+var petAppointmentWithClinics = petAppointment.Join(
+    clinics,
+    petAppointmentPair => petAppointmentPair.Appointment.ClinicId,
+    veterinaryClinic => veterinaryClinic.Id,
+    (petAppointmentPair, clinic) => new
+    {
+        Pet = petAppointmentPair.Pet,
+        Appointment = petAppointmentPair.Appointment,
+        Clinic = clinic
+    });
+
+var finalResult = petAppointmentWithClinics.Select(
+    petAppointmentPair => $"{petAppointmentPair.Pet.Name} has an appointment on " +
+                          $"{petAppointmentPair.Appointment.AppointmentDate} in " +
+                          $"{petAppointmentPair.Clinic.Name}"
+    );
+foreach (var appointment in finalResult)
+{
+    Console.WriteLine(appointment);
+}
+
+Console.WriteLine("-------------------------");

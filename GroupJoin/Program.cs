@@ -65,3 +65,25 @@ foreach (var appointment in leftJoinrw)
 {
     Console.WriteLine(appointment);
 }
+
+Console.WriteLine("Pets Appoinments Left-join in more queries");
+var petAppointment = pets.GroupJoin(
+    appointments,
+    pet => pet.Id,
+    clinicAppointment => clinicAppointment.PetId,
+    (pet, clinicAppointment) => new
+    {
+        Pet = pet,
+        Appointmens = clinicAppointment.DefaultIfEmpty()
+    });
+
+var finalResult= petAppointment.SelectMany(
+        petAppointmentPair => petAppointmentPair.Appointmens,
+        (petAppointmentPair, singleAppointement) => 
+        $"Pet {petAppointmentPair.Pet.Name} has an appointment on " +
+        $"{singleAppointement?.AppointmentDate}");
+
+foreach (var appointment in finalResult)
+{
+    Console.WriteLine(appointment);
+}

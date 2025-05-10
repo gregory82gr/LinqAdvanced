@@ -24,7 +24,7 @@ namespace Data
             return new List<ClinicAppointment>
         {
             new ClinicAppointment(101, 1, DateTime.Now.AddDays(1)), // Goldie
-            new ClinicAppointment(102, 2, DateTime.Now.AddDays(2)),
+            new ClinicAppointment(102, 2, DateTime.Now.AddDays(2)),// Whiskers
             new ClinicAppointment(103, 2, DateTime.Now.AddDays(5)),// Whiskers
             new ClinicAppointment(101, 3, DateTime.Now.AddDays(3)), // Buddy
             new ClinicAppointment(103, 4, DateTime.Now.AddDays(4)) // Nemo

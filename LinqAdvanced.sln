@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMany - Query syntax",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Introduction", "_Introduction\_Introduction.csproj", "{ADB5D895-D37C-4577-91FF-2D35902FD9AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderBy - Query syntax", "OrderBy - Query syntax\OrderBy - Query syntax.csproj", "{B4AB9C9B-0C6B-4CF3-90C1-F968FD6B7670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADB5D895-D37C-4577-91FF-2D35902FD9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4AB9C9B-0C6B-4CF3-90C1-F968FD6B7670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4AB9C9B-0C6B-4CF3-90C1-F968FD6B7670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4AB9C9B-0C6B-4CF3-90C1-F968FD6B7670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4AB9C9B-0C6B-4CF3-90C1-F968FD6B7670}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
