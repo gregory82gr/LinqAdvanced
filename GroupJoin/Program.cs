@@ -87,3 +87,39 @@ foreach (var appointment in finalResult)
 {
     Console.WriteLine(appointment);
 }
+Console.WriteLine("-------------------------");
+Console.WriteLine("Pets Appoinments left-join Full info ");
+// This is a left join
+    var petAppointmentFull = pets.GroupJoin(
+        appointments,
+        pet => pet.Id,
+        clinicAppointment => clinicAppointment.PetId,
+        (pet, clinicAppointment) => new
+        {
+            Pet = pet,
+            Appointmens = clinicAppointment.DefaultIfEmpty()
+        });
+    var finalResultFull1 = petAppointmentFull.SelectMany(
+        petAppointmentPair => petAppointmentPair.Appointmens,
+        (petAppointmentPair, singleAppointement) => new
+        {
+            Pet = petAppointmentPair.Pet,
+            Appointment = singleAppointement
+        });
+    var finalResultFull2 = finalResultFull1.GroupJoin(clinics,
+        petAppointmentPair => petAppointmentPair?.Appointment?.ClinicId,
+        veterinaryClinic => veterinaryClinic.Id,
+        (petAppointmentPair, clinic) => new
+        {
+            Pet = petAppointmentPair.Pet,
+            Appointment = petAppointmentPair.Appointment,
+            Clinic = clinic.DefaultIfEmpty()
+        });
+    var finalResultFull3 = finalResultFull2.SelectMany(
+            petAppointmentPair => petAppointmentPair.Clinic,
+            (petAppointmentPair, clinic) => $"{petAppointmentPair.Pet.Name} has an appointment on {petAppointmentPair.Appointment?.AppointmentDate} in {clinic?.Name}"
+        );
+    foreach (var appointment in finalResultFull3)
+    {
+        Console.WriteLine(appointment);
+    }
