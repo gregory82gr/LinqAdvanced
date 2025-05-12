@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distinct", "Distinct\Distin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistinctBy", "DistinctBy\DistinctBy.csproj", "{B17B5342-5EF6-4B56-AF02-E8B84CAC318C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Count", "Count\Count.csproj", "{9258C4E7-B1AA-4A0C-8642-911CEAFFEBCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{B17B5342-5EF6-4B56-AF02-E8B84CAC318C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B17B5342-5EF6-4B56-AF02-E8B84CAC318C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B17B5342-5EF6-4B56-AF02-E8B84CAC318C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9258C4E7-B1AA-4A0C-8642-911CEAFFEBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9258C4E7-B1AA-4A0C-8642-911CEAFFEBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9258C4E7-B1AA-4A0C-8642-911CEAFFEBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9258C4E7-B1AA-4A0C-8642-911CEAFFEBCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
