@@ -27,3 +27,19 @@ foreach (var plane in planes)
     plane.Fly();
     plane.Fuel();
 }
+
+Console.WriteLine("---------");
+
+var differentobjects = new object[]{
+    null,
+    1,
+    "all",
+    2,
+    "duck"};
+
+var strings = differentobjects.OfType<string>();
+Console.WriteLine("Strings:");
+foreach (var str in strings)
+{
+    Console.WriteLine(str);
+}
